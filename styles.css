@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-family: monospace
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#calculator-container {
+  height: 700px;
+  width: 600px;
+  background: linear-gradient(
+    90deg,
+    rgba(42, 123, 155, 1) 0%,
+    rgba(87, 199, 133, 1) 100%,
+    rgba(237, 221, 83, 1) 100%
+  );
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  /* gap: 5px; */
+}
+
+#calculator-header{
+    height: 200px;
+    background-color: rgb(45, 112, 103);
+    /* background-color: rgb(25, 51, 61); */
+    margin: 10px;
+    border-radius: 10px;
+    text-align: right;
+    font-size: 60px;
+    line-height: 130px;
+    padding: 30px;
+}
+
+#calculator-body{
+    height: 500px;
+    /* background-color: rgb(25, 61, 56); */
+    margin: 0 10px 10px 10px;
+    border-radius: 10px;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: calc(20% - 5px);
+    /* gap: 5px; */
+    margin: 5px 0;
+}
+
+.cell{
+    background-color: rgb(45, 112, 103);
+    flex: 1;
+    border-radius: 10px;
+    margin: 5px 5px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 79px;
+}
+
+.merged-cell{
+    flex: 2;
+}
